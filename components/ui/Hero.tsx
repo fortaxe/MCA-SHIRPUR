@@ -17,7 +17,7 @@ const Hero = () => {
     <div className="bg-gray-100 flex items-center">       
       <div className="container max-w-[1440px] w-full mx-auto px-6 lg:px-[50px]">         
         {/* Remove NavbarDemo from here */}
-        <div className="flex flex-col lg:flex-row gap-[60px] items-center py-[100px]">           
+        <div className="flex flex-col lg:flex-row gap-[60px] items-center py-[160px]">           
           {/* Left Content Section */}           
           <div className="flex-1 space-y-6">             
             <h1 className="text-4xl md:text-5xl lg:text-[58px] font-black text-black leading-[65.12px] tracking-0">               

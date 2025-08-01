@@ -88,14 +88,14 @@ export function MarqueeDemoVertical() {
         <h1 className="text-4xl font-bold mb-4 text-center uppercase">
           What People Are Saying
         </h1>
-         <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[35px]">
+         <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[15px]">
           Hear from makers, founders, and creatives who’ve tried it unfiltered
           and honest.
         </p>
       </div>
 
       {/* Responsive layout */}
-      <div className="relative grid h-[500px] w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden">
+      <div className="relative grid h-[500px] w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden mt-[35px]">
         {/* Column 1 - Always visible */}
         <Marquee pauseOnHover vertical className="[--duration:20s]">
           {firstRow.map((review) => (
