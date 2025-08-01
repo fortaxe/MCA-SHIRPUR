@@ -7,10 +7,12 @@ import ThirdSection from "@/components/ui/ThirdSection";
 import { MarqueeDemoVertical } from "@/components/ui/MarqueeDemoVertical";
 import Blogs from "@/components/ui/Blogs";
 import ThreeDPhotoCarouselDemo from "@/components/ui/three-d-coursel-demo";
+import { NavbarDemo } from "@/components/ui/NavbarDemo";
 
 export default function Home() {
   return (
     <div className="bg-[#F3F3F3]">
+       <NavbarDemo />
       <Hero />
       <UpcomingEvents />
       <ThirdSection />
