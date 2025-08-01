@@ -13,28 +13,28 @@ const UpcomingEvents = () => {
       date: "22.05.2025",
       title:
         "Event description Lorem ipsum dolor sit amet, consectetur description ",
-      image: "/home/event1.png",
+      image: "/gray-card.jpg",
     },
     {
       id: 2,
       date: "22.05.2025",
       title:
         "Event description Lorem ipsum dolor sit amet, consectetur description ",
-      image: "/home/event1.png",
+      image: "/gray-card.jpg",
     },
     {
       id: 3,
       date: "22.05.2025",
       title:
         "Event description Lorem ipsum dolor sit amet, consectetur description ",
-      image: "/home/event1.png",
+      image: "/gray-card.jpg",
     },
     {
       id: 4,
       date: "22.05.2025",
       title:
         "Event description Lorem ipsum dolor sit amet, consectetur description ",
-      image: "/home/event1.png",
+      image: "/gray-card.jpg",
     },
     
   ];
