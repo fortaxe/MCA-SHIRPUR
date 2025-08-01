@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import styled from 'styled-components';
 
@@ -23,7 +25,7 @@ export const CustomArrow = ({ img, onClick }: { img: string, onClick: any }) => 
 
 const StyledWrapper = styled.div`
   button {
-    
+    text-transform: uppercase;
     color: black;
     border-radius: 10em;
     font-size: 14px;

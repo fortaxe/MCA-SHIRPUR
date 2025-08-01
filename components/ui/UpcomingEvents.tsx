@@ -36,20 +36,7 @@ const UpcomingEvents = () => {
         "Event description Lorem ipsum dolor sit amet, consectetur description ",
       image: "/home/event1.png",
     },
-    {
-      id: 3,
-      date: "June 25, 2025",
-      title:
-        "Event description Lorem ipsum dolor sit amet, consectetur description ",
-      image: "/home/event1.png",
-    },
-    {
-      id: 4,
-      date: "June 25, 2025",
-      title:
-        "Event description Lorem ipsum dolor sit amet, consectetur description ",
-      image: "/home/event1.png",
-    },
+    
   ];
 
   const nextSlide = () => {
@@ -60,14 +47,7 @@ const UpcomingEvents = () => {
     setCurrentIndex((prev) => (prev - 1 + events.length) % events.length);
   };
 
-  const getVisibleEvents = () => {
-    const visible = [];
-    for (let i = 0; i < 4; i++) {
-      const index = (currentIndex + i) % events.length;
-      visible.push(events[index]);
-    }
-    return visible;
-  };
+
 
   return (
     <div className="max-w-[1440px] mx-auto px-[50px] py-[70px] ">
@@ -82,7 +62,7 @@ const UpcomingEvents = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {getVisibleEvents().map((event, index) => (
+        {events.map((event, index) => (
           <div
             key={`${event.id}-${currentIndex}-${index}`}
             className="overflow-x-auto  duration-300"

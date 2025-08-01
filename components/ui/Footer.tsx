@@ -1,95 +1,114 @@
 "use client";
-
-import Link from 'next/link'
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
+  const router = useRouter();
   return (
-    <footer className="border-t bg-background">
-      <div className="container mx-auto px-4 py-8">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          {/* Brand/Logo Section */}
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Logo GPT</h3>
-            <p className="text-muted-foreground mb-4">
-              Generate, store, and download logos with DALL-E 3 and Supabase. 
-              Perfect for building your own logo marketplace.
-            </p>
-            <div className="space-y-2">
-              <p className="text-sm font-medium">One-time payment, lifetime access</p>
-              <p className="text-sm text-muted-foreground">One-time payment, 1 year of updates</p>
+    <div className="px-4  md:px-[50px] pb-[30px] md:pb-[75px] w-full  max-w-[1440px] mx-auto">
+      <div className="flex rounded-[40px] w-full bg-white pt-12">
+        <div className="px-4 sm:px-0 py-[16px] md:px-[80px] text-left ">
+          {/* Main Title */}
+          <div
+            className="text-[32px] md:text-[72px] xl:text-[126px] sm:leading-[100%]  tracking-0
+            pb-[30px] md:pb-[50px] text-black text-left"
+          >
+            MCA Shirpur
+          </div>
+
+          {/* Content Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] md:gap-12 mb-[30px] md:mb-16 text-left font-helvetica">
+            {/* Services Column */}
+            <div className="text-left">
+              <div className="space-y-4 text-left">
+                <div
+                  onClick={() => router.push("/seo")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Visit
+                </div>
+                <div
+                  onClick={() => router.push("/website-optimization")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Education
+                </div>
+                <div
+                  onClick={() => router.push("/digital-marketing")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Become a Member{" "}
+                </div>
+                <div
+                  onClick={() => router.push("/website-development")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  About{" "}
+                </div>
+                <div
+                  onClick={() => router.push("/app-development")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Get Involved{" "}
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Column */}
+            <div className="text-left">
+              <div className="space-y-4 text-left">
+                <div
+                  onClick={() => router.push("/seo")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Visit
+                </div>
+                <div
+                  onClick={() => router.push("/website-optimization")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Education
+                </div>
+                <div
+                  onClick={() => router.push("/digital-marketing")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Become a Member{" "}
+                </div>
+                <div
+                  onClick={() => router.push("/website-development")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  About{" "}
+                </div>
+                <div
+                  onClick={() => router.push("/app-development")}
+                  className="text-black cursor-pointer text-[16px] leading-[100%] tracking-[0em] text-left"
+                >
+                  Get Involved{" "}
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Features */}
-          <div>
-            <h4 className="font-semibold mb-4">Features</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>DALL-E 2 & 3 Integration</li>
-              <li>Supabase Storage</li>
-              <li>Credit System</li>
-              <li>Secure Authentication</li>
-            </ul>
-          </div>
+      <div className="border border-t-[#585858]" />
 
-          {/* Resources */}
-          <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="#supabase" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Setup Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="https://supabase.com/dashboard" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Supabase Dashboard
-                </Link>
-              </li>
-              <li>
-                <Link href="https://platform.openai.com/docs" className="text-muted-foreground hover:text-foreground transition-colors">
-                  OpenAI Docs
-                </Link>
-              </li>
-              <li>
-                <Link href="https://vercel.com/new" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Deploy on Vercel
-                </Link>
-              </li>
-            </ul>
+          {/* Footer */}
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-center text-[14px] leading-[20px] tracking-[0em] text-black   text-left pt-4 pb-2 font-helvetica">
+            <div className="flex flex-col md:flex-row md:space-x-6 text-left">
+              <span className="text-left">
+                Privacy Policy 
+              </span>
+              <span
+                onClick={() => router.push("/privacy-policy")}
+                className="cursor-pointer transition-colors text-left"
+              >
+                | ©2025 MCA Chess Academy
+              </span>
+            </div>
+            <div className="text-left"></div>
           </div>
-        </div>
-
-        {/* Bottom Footer */}
-        <div className="pt-6 border-t flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Logo GPT. All rights reserved.</p>
-            <Link href="https://x.com/nolansym" className="hover:text-foreground transition-colors">
-              Support
-            </Link>
-          </div>
-          
-          <button
-            onClick={scrollToTop}
-            className="text-primary hover:text-primary/80 font-bold text-sm transition-colors flex items-center gap-1"
-          >
-            <svg 
-              className="w-4 h-4" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
-            Scroll to top
-          </button>
         </div>
       </div>
-    </footer>
-  )
+    </div>
+  );
 }
-
