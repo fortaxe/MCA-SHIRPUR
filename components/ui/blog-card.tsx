@@ -1,5 +1,5 @@
 import { BlogProps } from "@/lib/types";
-import CustomButton from "../button/CustomButton";
+import BlackButton from "../button/black-button";
 import React from "react";
 
 const BlogCard: React.FC<BlogProps> = ({
@@ -27,7 +27,7 @@ const BlogCard: React.FC<BlogProps> = ({
           <p className="text-[12px] left-align text-black1 mb-0 font-helvetica text-white">
             {createdAt}
           </p>
-          <CustomButton name="Read More" onClick={console.log("somethign")} />
+          <BlackButton name="Read More" onClick={console.log("somethign")} />
         </div>
       </div>
     </div>
