@@ -49,9 +49,9 @@ const Blogs = () => {
   return (
     <div className="max-w-[1440px] mx-auto px-[50px] py-[70px] ">
       <div className="flex items-center justify-between mb-[50px]">
-        <h2 className="text-[38px]  text-black leading-[100%] tracking-0 uppercase">
+         <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase">
           News and Updates{" "}
-        </h2>
+        </p>
         <div className="flex gap-2">
           <CustomArrow img="/arrows/left.png" onClick={prevSlide} />
           <CustomArrow img="/arrows/right.png" onClick={nextSlide} />

@@ -85,9 +85,9 @@ export function MarqueeDemoVertical() {
   return (
     <div className="max-w-[1366px] px-4 md:px-6 lg:px-15 mx-auto w-full py-12 md:py-[80px] ">
       <div className="text-center mb-20">
-        <h1 className="text-4xl font-bold mb-4 text-center uppercase">
+         <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase mb-4 ">
           What People Are Saying
-        </h1>
+        </p>
          <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[15px]">
           Hear from makers, founders, and creatives who’ve tried it unfiltered
           and honest.

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 
 import CustomButton, { CustomArrow } from "../button/CustomButton";
+import DottedBorderContainer from "./dotted-container";
 
   const events = [
     {
@@ -53,10 +54,12 @@ const UpcomingEvents = () => {
 
   return (
     <div className="max-w-[1440px] mx-auto px-[50px] py-[70px] ">
+              {/* <DottedBorderContainer className="bg-white rounded-3xl p-12"> */}
+
       <div className="flex items-center justify-between mb-[50px]">
-        <h2 className="text-[38px]  text-black leading-[100%] tracking-0 uppercase">
+        <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase">
           Upcoming Events
-        </h2>
+        </p>
         <div className="flex gap-2">
           <CustomArrow img="/arrows/left.png" onClick={prevSlide} />
           <CustomArrow img="/arrows/right.png" onClick={nextSlide} />
@@ -101,6 +104,7 @@ const UpcomingEvents = () => {
           </div>
         ))}
       </div>
+      {/* </DottedBorderContainer> */}
     </div>
   );
 };
