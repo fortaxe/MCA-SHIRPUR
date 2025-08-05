@@ -87,11 +87,11 @@ const UpcomingEvents = () => {
             </div>
 
             <div>
-              <p className="text-[16px] py-4 text-description font-helvetica leading-[24px] tracking-0 ">
+              <p className="text-[16px] py-4 text-description font-helvetica leading-[22px] tracking-0 ">
                 {event.title}
               </p>
 
-              <div className="flex items-center justify-between text-[14px] leading-[24px] tracking-0 text-description transition-colors group pb-2 pr-1">
+              <div className="flex items-end justify-between text-[14px] leading-[24px] tracking-0 text-description transition-colors group pb-2 pr-1">
                 <span className="mr-2 text-description font-helvetica  leading-[24px] tracking-0">
                   {event.date}
                 </span>

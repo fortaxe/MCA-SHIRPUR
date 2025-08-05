@@ -17,13 +17,13 @@ const BlogCard: React.FC<BlogProps> = ({
       />
 
       <div className="mt-[15px] flex flex-col flex-grow">
-        <p className="text-[18px] left-align text-white leading-[26px] tracking-0 font-helvetica  pt-[25px]">
+        <p className="text-[20px] left-align text-white leading-[26px] tracking-0 font-helvetica  pt-[25px]">
           {heading}
         </p>
-        <p className="text-[#C8C8C8] font-helvetica  text-[16px]  leading-[24px] tracking-0 pt-[25px]">
+        <p className="text-[#C8C8C8] font-helvetica  text-[16px]  leading-[22px] tracking-0 pt-[25px]">
           {description}
         </p>
-        <div className="flex justify-between items-center pt-[25px] mt-auto">
+        <div className="flex justify-between items-end pt-[25px] mt-auto">
           <p className="text-[12px] left-align text-black1 mb-0 font-helvetica text-white">
             {createdAt}
           </p>

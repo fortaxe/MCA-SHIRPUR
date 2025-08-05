@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Main Title */}
           <div
             className="text-[32px] md:text-[72px] xl:text-[126px] sm:leading-[100%]  tracking-0
-            pb-[30px] md:pb-[50px] text-black text-left"
+            pb-[30px] md:pb-[50px] text-black text-left uppercase"
           >
             MCA Shirpur
           </div>
@@ -90,14 +90,12 @@ export default function Footer() {
             </div>
           </div>
 
-      <div className="border border-t-[#585858]" />
+          <div className="border border-t-[#585858]" />
 
           {/* Footer */}
           <div className="flex flex-col md:flex-row justify-center items-center md:items-center text-[14px] leading-[20px] tracking-[0em] text-black   text-left pt-4 pb-2 font-helvetica">
             <div className="flex flex-col md:flex-row md:space-x-6 text-left">
-              <span className="text-left">
-                Privacy Policy 
-              </span>
+              <span className="text-left">Privacy Policy</span>
               <span
                 onClick={() => router.push("/privacy-policy")}
                 className="cursor-pointer transition-colors text-left"

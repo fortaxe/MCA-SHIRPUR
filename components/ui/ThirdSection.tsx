@@ -4,7 +4,7 @@ import { AnimatedTooltipPreview } from "./animated-demo"
 const ThirdSection = () => {
   return (
     <div className="max-w-[1440px] mx-auto px-[50px] justify-center flex flex-col items-center py-[70px]">
-           <h2 className="text-[58px]  text-black text-center tracking-0 leading-[100%] ">
+           <h2 className="text-[58px] uppercase  text-black text-center tracking-0 leading-[100%] ">
                   Every Great Player 
                   <br />
                   Starts with a First Move

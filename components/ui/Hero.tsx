@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row gap-[60px] items-center py-[160px]">           
           {/* Left Content Section */}           
           <div className="flex-1 space-y-6">             
-            <h1 className="text-4xl md:text-5xl lg:text-[58px] font-black text-black leading-[65.12px] tracking-0">               
+            <h1 className="text-4xl md:text-5xl lg:text-[58px] font-black text-black leading-[65.12px] tracking-0 uppercase">               
               UNCOVER THE               
               <br />               
               TIMELESS BEAUTY               
@@ -49,9 +49,9 @@ const Hero = () => {
           {/* Right Video Section */}           
           <div className="w-[438px] h-[700px] relative flex justify-center lg:justify-end shrink-0">             
             {!isVideoLoaded && (               
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse">                 
-                <div className="w-full h-full bg-gray-300 rounded-xl relative overflow-hidden">                   
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>                 
+              <div className="absolute rounded-full inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse">                 
+                <div className="w-full h-full rounded-full bg-gray-300  relative overflow-hidden">                   
+                  <div className="absolute  inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>                 
                 </div>               
               </div>             
             )}              

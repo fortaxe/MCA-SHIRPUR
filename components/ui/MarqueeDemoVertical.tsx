@@ -88,10 +88,10 @@ export function MarqueeDemoVertical() {
          <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase mb-4 ">
           What People Are Saying
         </p>
-         <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[15px]">
+         {/* <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[15px]">
           Hear from makers, founders, and creatives who’ve tried it unfiltered
           and honest.
-        </p>
+        </p> */}
       </div>
 
       {/* Responsive layout */}

@@ -20,9 +20,9 @@ const StyledWrapper = styled.div`
     text-transform: uppercase;
     color: black;
     border-radius: 10em;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
-    padding: 15px 20px;
+    padding: 10px 15px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid white;
