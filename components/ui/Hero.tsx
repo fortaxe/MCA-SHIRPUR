@@ -5,6 +5,8 @@ import React from "react";
 import { NavbarDemo } from "./NavbarDemo";
 import CustomButton from "../button/CustomButton";
 import { useState } from "react";
+import DottedBorderContainer from "./dotted-container";
+import SideDottedBorderContainer from "./SideDottedContainer";
 
 const Hero = () => {   
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);    
@@ -15,9 +17,10 @@ const Hero = () => {
   
   return (     
     <div className="bg-gray-100 flex items-center">       
-      <div className="container max-w-[1440px] w-full mx-auto px-6 lg:px-[50px]">         
+      <div className="container max-w-[1440px] w-full mx-auto lg:px-[20px]">  
+            <SideDottedBorderContainer className="  px-[30px] py-[35px]">      
         {/* Remove NavbarDemo from here */}
-        <div className="flex flex-col lg:flex-row gap-[60px] items-center py-[160px]">           
+        <div className="flex flex-col lg:flex-row gap-[60px] items-center pt-[100px]">           
           {/* Left Content Section */}           
           <div className="flex-1 space-y-6">             
             <h1 className="text-4xl md:text-5xl lg:text-[58px] font-black text-black leading-[65.12px] tracking-0 uppercase">               
@@ -72,7 +75,8 @@ const Hero = () => {
               Your browser does not support the video tag.             
             </video>           
           </div>         
-        </div>       
+        </div>
+        </SideDottedBorderContainer>        
       </div>     
     </div>   
   ); 
