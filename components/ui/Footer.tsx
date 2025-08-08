@@ -8,7 +8,7 @@ export default function Footer() {
     // <div className="px-4  md:px-[50px] pb-[30px] md:pb-[75px] w-full  max-w-[1440px] mx-auto">
     <div className=" max-w-[1440px] w-full mx-auto px-2 lg:px-[20px] ">
       <SideDottedBorderContainer className="px-4 sm:px-[30px]  pb-[30px] sm:pb-[50px]">
-        <div className="flex rounded-[20px] sm:rounded-[40px] w-full bg-black py-[25px] sm:pt-[70px] sm:pb-[50px]">
+        <div className="flex rounded-[20px] sm:rounded-[25px] w-full bg-black py-[25px] sm:pt-[70px] sm:pb-[50px]">
           <div className="px-4 sm:px-0 md:px-[40px] text-left ">
             {/* Main Title */}
             <div
@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="flex flex-row gap-4 sm:gap-[100px] mb-[30px] md:mb-[50px] text-left font-medium">
               {/* Services Column */}
               <div className="text-left">
-                <p className="description text-white! font-abril pb-[15px]">
+                <p className="description text-white! font-abril pb-[15px] uppercase">
                   Menu
                 </p>
                 <div className="space-y-[2px] text-left text-white!">
@@ -68,7 +68,7 @@ export default function Footer() {
 
               {/* Contact Column */}
               <div className="text-left">
-                <p className="description text-white! font-abril pb-[15px]">
+                <p className="description text-white! font-abril pb-[15px] uppercase">
                   Contact
                 </p>
                 <div className="space-y-[2px] text-left">
@@ -137,7 +137,7 @@ export default function Footer() {
                   onClick={() => router.push("/privacy-policy")}
                   className="cursor-pointer transition-colors text-left"
                 >
-                  ©2025 MCA Chess Academy
+                  ©2025 MCA Chess Academy.
                 </span>
               </div>
             </div>
