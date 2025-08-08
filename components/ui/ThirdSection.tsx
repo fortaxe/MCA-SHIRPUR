@@ -7,7 +7,7 @@ const ThirdSection = () => {
     <div className=" justify-center flex flex-col items-center ">
       <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px] ">
         <SideDottedBorderContainer className=" px-[50px] py-[70px]">
-          <h2 className="text-[58px] uppercase text-black text-center tracking-0 leading-[100%]   ">
+          <h2 className="text-[58px] uppercase text-black text-center tracking-0 leading-[100%]   font-monument">
             Every Great Player
             <br />
             Starts with a First Move

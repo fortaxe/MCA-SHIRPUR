@@ -125,7 +125,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-[14px] leading-[100%] tracking-0 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2 uppercase",
+        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-[16px] leading-[100%] tracking-0 transition duration-200  lg:flex lg:space-x-2 uppercase font-semibold text-[#767676] ",
         className,
       )}
     >
@@ -133,14 +133,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-black dark:text-neutral-300"
+          className="relative px-4 py-2 text-[#767676] dark:text-neutral-300"
           key={`link-${idx}`}
           href={item.link}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 "
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -247,7 +247,7 @@ export const NavbarLogo = () => {
         width={30}
         height={30}
       /> */}
-      <span className="font-medium text-black text-[14px] leading-[100%] tracking-0 dark:text-white">
+      <span className="font-semibold text-[#767676] text-[16px] leading-[100%] tracking-0 dark:text-white">
         MCA SHIRPUR
       </span>
     </a>

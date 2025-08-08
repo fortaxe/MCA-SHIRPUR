@@ -88,7 +88,7 @@ export function MarqueeDemoVertical() {
        <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
         <SideDottedBorderContainer className=" px-[50px]  py-[35px]">
       <div className="text-center mb-20">
-         <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase mb-4 ">
+         <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase mb-4 font-monument">
           What People Are Saying
         </p>
          {/* <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[15px]">

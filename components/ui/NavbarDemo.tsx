@@ -41,7 +41,9 @@ export function NavbarDemo() {
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
-          <NavItems items={navItems} />
+          <NavItems 
+          className="text-[#767676]"
+          items={navItems} />
           <div className="flex items-center gap-4">
             <CustomButton
               name="JOIN TODAY"

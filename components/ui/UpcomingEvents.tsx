@@ -51,7 +51,7 @@ const UpcomingEvents = () => {
     <div className="max-w-[1440px] mx-auto px-[20px]  ">
       <DottedBorderContainer className="  px-[30px] py-[35px]">
         <div className="flex items-center justify-between mb-[50px]">
-          <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase">
+          <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase font-monument">
             Upcoming Events
           </p>
           <div className="flex gap-2">

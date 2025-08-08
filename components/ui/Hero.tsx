@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row gap-[60px] items-center justify-center pt-[100px]">
             {/* Left Content Section */}
             <div className="flex-1 space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-[58px] font-black text-black leading-[65.12px] tracking-0 uppercase">
+              <h1 className="text-4xl md:text-5xl lg:text-[58px] font-black text-black leading-[65.12px] tracking-0 uppercase font-monument">
                 UNCOVER THE
                 <br />
                 TIMELESS BEAUTY

@@ -146,7 +146,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-geist-sans), Helvetica Roman, sans-serif !important;
+    font-family: var(--font-geist-sans), Monument Extended, sans-serif !important;
   }
 }
 

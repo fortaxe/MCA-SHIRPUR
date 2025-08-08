@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Main Title */}
           <div
             className="text-[32px] md:text-[72px] xl:text-[126px] sm:leading-[100%] tracking-0
-            pb-[30px] md:pb-[50px] text-black text-left uppercase"
+            pb-[30px] md:pb-[50px] text-black text-left uppercase font-monument"
           >
             MCA Shirpur
           </div>
