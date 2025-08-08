@@ -61,7 +61,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-full w-full   cursor-pointer overflow-hidden rounded-[20px] sm:rounded-[25px]  shadow-sm outline outline-black/5 p-4 ",
+        "relative w-full  cursor-pointer overflow-hidden rounded-[20px] sm:rounded-[25px] shadow-sm outline outline-black/5 p-4 ", // Removed h-full, added mb-4
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -70,66 +70,63 @@ const ReviewCard = ({
     >
       <div className="flex flex-row items-center gap-2">
         <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col ">
-          <figcaption className="description text-black! ">
+        <div className="flex flex-col">
+          <figcaption className="description text-black!">
             {name}
           </figcaption>
-         
         </div>
       </div>
-      <blockquote className="mt-2 description ">{body}</blockquote>
+      <blockquote className="mt-2 description">{body}</blockquote>
     </figure>
   );
 };
 
 export function MarqueeDemoVertical() {
   return (
-    // <div className="max-w-[1440px] px-4 md:px-6 lg:px-15 mx-auto w-full py-12 md:py-[80px] ">
-       <div className=" max-w-[1440px] w-full mx-auto px-2 lg:px-[20px]">
-        <SideDottedBorderContainer className="px-2 sm:px-[50px] py-[25px] sm:py-[35px]">
-      <div className="text-center mb-[25px] sm:mb-20">
-         <p className=" mb-4 font-abril sub-small-heading uppercase">
-          What People Are Saying
-        </p>
-    
-      </div>
+    <div className="max-w-[1440px] w-full mx-auto px-2 lg:px-[20px]">
+      <SideDottedBorderContainer className="px-2 sm:px-[50px] py-[25px] sm:py-[35px]">
+        <div className="text-center mb-[25px] sm:mb-20">
+          <p className="mb-4 font-abril sub-small-heading uppercase">
+            What People Are Saying
+          </p>
+        </div>
 
-      {/* Responsive layout */}
-      <div className="relative grid h-[800px] w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden mt-[35px]">
-        {/* Column 1 - Always visible */}
-        <Marquee pauseOnHover vertical className="[--duration:20s]">
-          {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
+        {/* Updated: Removed fixed height, changed to auto height */}
+        <div className="relative grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden mt-[35px] h-[800px]">
+          {/* Column 1 - Always visible */}
+          <Marquee pauseOnHover vertical className="[--duration:20s]">
+            {firstRow.map((review) => (
+              <ReviewCard key={review.username} {...review} />
+            ))}
+          </Marquee>
 
-        {/* Column 2 - Hidden below sm */}
-        <Marquee
-          reverse
-          pauseOnHover
-          vertical
-          className="hidden sm:flex [--duration:20s]"
-        >
-          {secondRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
+          {/* Column 2 - Hidden below sm */}
+          <Marquee
+            reverse
+            pauseOnHover
+            vertical
+            className="hidden sm:flex [--duration:20s]"
+          >
+            {secondRow.map((review) => (
+              <ReviewCard key={review.username} {...review} />
+            ))}
+          </Marquee>
 
-        {/* Column 3 - Hidden below md */}
-        <Marquee
-          pauseOnHover
-          vertical
-          className="hidden md:flex [--duration:20s]"
-        >
-          {thirdRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
+          {/* Column 3 - Hidden below md */}
+          <Marquee
+            pauseOnHover
+            vertical
+            className="hidden md:flex [--duration:20s]"
+          >
+            {thirdRow.map((review) => (
+              <ReviewCard key={review.username} {...review} />
+            ))}
+          </Marquee>
 
-        {/* Gradient overlays */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-white to-transparent"></div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white to-transparent"></div>
-      </div>
+          {/* Gradient overlays */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-white to-transparent"></div>
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white to-transparent"></div>
+        </div>
       </SideDottedBorderContainer>
     </div>
   );

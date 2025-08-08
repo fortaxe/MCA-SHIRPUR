@@ -10,7 +10,7 @@ const ContactCard = () => {
           </div>
           <div>
             <div className="text-lg font-bold dark:text-white">Manish Gole</div>
-            <div className="text-sm text-gray-500 dark:text-gray-200">@manishgole</div>
+            <div className="description ">@manishgole</div>
           </div>
         </div>
         <div>
@@ -30,7 +30,7 @@ const ContactCard = () => {
         </div>
       </div>
       <div className="px-6 py-4">
-        <div className="text-sm text-gray-800 dark:text-gray-200">
+        <div className="description ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           pellentesque id erat at blandit. Donec ullamcorper turpis vitae dolor
           lacinia mollis. Donec at augue eget ipsum porttitor interdum.
