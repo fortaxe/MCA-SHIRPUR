@@ -150,12 +150,12 @@
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: "Helvetica Roman";
   src: url("/font/Helvetica Roman.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "Aeonik";

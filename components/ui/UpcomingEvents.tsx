@@ -81,12 +81,12 @@ const UpcomingEvents = () => {
               </div>
 
               <div>
-                <p className="text-[16px] py-4 description font-helvetica leading-[22px] tracking-0 ">
+                <p className="text-[16px] py-4 description  leading-[22px] tracking-0 ">
                   {event.title}
                 </p>
 
                 <div className="flex items-end justify-between text-[14px]  description transition-colors group pb-2 pr-1">
-                  <span className="mr-2 description font-helvetica  ">
+                  <span className="mr-2 description   ">
                     {event.date}
                   </span>
                   <CustomButton
@@ -209,12 +209,12 @@ export default UpcomingEvents;
 
 //             {/* Content */}
 //             <div className="p-4">
-//               <p className="text-[16px] py-4 text-gray-600 font-helvetica leading-[24px] tracking-0">
+//               <p className="text-[16px] py-4 text-gray-600  leading-[24px] tracking-0">
 //                 {event.title}
 //               </p>
 
 //               <div className="flex items-center justify-between text-[14px] leading-[24px] tracking-0 text-gray-600 transition-colors group pb-2 pr-1">
-//                 <span className="mr-2 text-gray-600 font-helvetica leading-[24px] tracking-0">
+//                 <span className="mr-2 text-gray-600  leading-[24px] tracking-0">
 //                   {event.date}
 //                 </span>
 //                 <CustomButton

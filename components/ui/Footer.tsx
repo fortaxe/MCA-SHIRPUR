@@ -96,7 +96,7 @@ export default function Footer() {
           <div className="border border-t-[#585858]" />
 
           {/* Footer */}
-          <div className="flex flex-col md:flex-row justify-center items-center md:items-center text-[14px] leading-[20px] tracking-[0em] text-black   text-left pt-4 pb-2 font-helvetica">
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-center text-[14px] leading-[20px] tracking-[0em] text-black   text-left pt-4 pb-2 ">
             <div className="flex flex-col md:flex-row md:space-x-6 text-left">
               <span className="text-left">Privacy Policy</span>
               <span

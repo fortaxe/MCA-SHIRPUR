@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactCard = () => {
   return (
-    <div className="w-full max-w-md bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mx-auto font-helvetica">
+    <div className="w-full max-w-md bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mx-auto ">
       <div className="flex justify-between items-center px-6 py-4">
         <div className="flex space-x-4">
           <div>

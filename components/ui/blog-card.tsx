@@ -24,7 +24,7 @@ const BlogCard: React.FC<BlogProps> = ({
           {description}
         </p>
         <div className="flex justify-between items-end pt-[25px] mt-auto">
-          <p className="text-[12px] left-align text-black1 mb-0 font-helvetica text-white">
+          <p className="text-[12px] left-align text-black1 mb-0 text-white">
             {createdAt}
           </p>
           <BlackButton name="Read More" onClick={console.log("somethign")} />

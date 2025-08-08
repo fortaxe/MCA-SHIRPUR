@@ -24,7 +24,7 @@ export function NavbarDemo() {
       link: "#pricing",
     },
     {
-      name: "",
+      name: "Academy",
       link: "#contact",
     },
     {
