@@ -8,7 +8,7 @@ const BlogCard: React.FC<BlogProps> = ({
   description,
   createdAt,
 }) => (
-  <div className="relative bg-[#3D3D3D] rounded-[25px]">
+  <div className="relative bg-black rounded-[25px]">
     <div className=" p-[25px] flex flex-col h-full">
       <img
         src={img}
