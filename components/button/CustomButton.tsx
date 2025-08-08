@@ -28,8 +28,8 @@ const StyledWrapper = styled.div`
     padding: 10px 14px !important;
     cursor: pointer !important;
     transition: all 0.3s ease-in-out !important;
-    border: 1px solid #767676 !important;
-    box-shadow: 3px 3px 0 0 #767676 !important;
+    border: 1px solid black !important;
+    box-shadow: 3px 3px 0 0 black !important;
     line-height: 100% !important;
     position: relative !important;
 
