@@ -36,6 +36,7 @@ const StyledWrapper = styled.div`
     border: 1px solid black;
     box-shadow: 2px 5px 0 0 black; /* initially visible shadow */
     line-height: 100%;
+    font-family: monument;
   }
 
   button:hover {

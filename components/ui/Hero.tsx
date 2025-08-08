@@ -32,7 +32,7 @@ const Hero = () => {
                 CHESS
               </h1>
 
-              <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0">
+              <p className="description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley

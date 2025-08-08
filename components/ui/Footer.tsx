@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           {/* Content Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] md:gap-12 mb-[30px] md:mb-16 text-left font-helvetica">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] md:gap-12 mb-[30px] md:mb-16 text-left font-medium">
             {/* Services Column */}
             <div className="text-left">
               <div className="space-y-4 text-left">

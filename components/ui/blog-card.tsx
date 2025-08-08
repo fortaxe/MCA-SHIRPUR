@@ -17,10 +17,10 @@ const BlogCard: React.FC<BlogProps> = ({
       />
 
       <div className="mt-[15px] flex flex-col flex-grow">
-        <p className="text-[20px] left-align text-white leading-[26px] tracking-0 font-helvetica  pt-[25px]">
+        <p className="text-[20px] left-align text-white leading-[26px] tracking-0 font-medium  pt-[25px]">
           {heading}
         </p>
-        <p className="text-[#C8C8C8] font-helvetica  text-[16px]  leading-[22px] tracking-0 pt-[25px]">
+        <p className="description pt-[25px]">
           {description}
         </p>
         <div className="flex justify-between items-end pt-[25px] mt-auto">

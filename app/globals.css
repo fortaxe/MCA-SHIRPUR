@@ -43,7 +43,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-description: #585858;
+
 
   --animate-shimmer: shimmer 2s infinite;
 
@@ -170,4 +170,12 @@
   src: url("/font/MONUMENTEXTENDED-REGULAR.OTF") format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+
+.description {
+  color: #585858;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  font-weight: 500;
 }

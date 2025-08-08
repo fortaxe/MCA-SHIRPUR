@@ -14,7 +14,7 @@ export default function ThreeDPhotoCarouselDemo() {
             <br />
             to Teach Moves
           </h1>
-          <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[15px] max-w-[600px] mx-auto">
+          <p className="description mt-[15px] max-w-[600px] mx-auto">
             It’s to help you think like a champion. That’s why I’ve made our
             sessions more focused, more productive, and tailored to you.
           </p>
