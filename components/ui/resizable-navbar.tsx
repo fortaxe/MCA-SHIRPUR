@@ -51,7 +51,6 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState<boolean>(false);
 
-  // Use native scroll event instead of Framer Motion
   React.useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -64,17 +63,15 @@ export const Navbar = ({ children, className }: NavbarProps) => {
       }
     };
 
-    // Add scroll listener
     window.addEventListener('scroll', handleScroll);
     
-    // Cleanup
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <motion.div
       ref={ref}
-      className={cn("fixed inset-x-0 top-0 z-40 w-full max-w-[1440px] mx-auto px-[50px] pt-6 ", className)}
+      className={cn("fixed inset-x-0 top-0 z-40 w-full max-w-[1440px] mx-auto px-[50px] pt-6", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -93,7 +90,6 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
     <motion.div
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
-     
         width: visible ? "40%" : "100%",
         y: visible ? 20 : 0,
       }}
@@ -106,7 +102,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         minWidth: "1080px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-transparent p-[15px] lg:flex dark:bg-transparent border border-[0.5px] border-[#EDEDED]", // Added border here
+        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-transparent p-[15px] lg:flex dark:bg-transparent border border-[0.5px] border-[#EDEDED]",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className,
       )}
@@ -123,7 +119,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-[16px] leading-[100%] tracking-0 transition duration-200  lg:flex lg:space-x-2  font-semibold text-[#767676] ",
+        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-[16px] leading-[100%] tracking-0 transition duration-200 lg:flex lg:space-x-2 font-semibold text-[#767676]",
         className,
       )}
     >
@@ -138,7 +134,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 "
+              className="absolute inset-0 h-full w-full rounded-full bg-gray-100"
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -147,6 +143,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     </motion.div>
   );
 };
+
 
 export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
   return (

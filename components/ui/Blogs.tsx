@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import { CustomArrow } from "../button/CustomButton";
+import CustomArrow from "../button/custom-arrow";
 import BlogCard from "./blog-card";
 import DottedBorderContainer from "./dotted-container";
 
@@ -53,8 +53,8 @@ const Blogs = () => {
               News and Updates{" "}
             </p>
             <div className="flex gap-2">
-              <CustomArrow img="/arrows/left.png" onClick={prevSlide} />
-              <CustomArrow img="/arrows/right.png" onClick={nextSlide} />
+              <CustomArrow img="/arrows/left.svg" onClick={prevSlide} />
+              <CustomArrow img="/arrows/right.svg" onClick={nextSlide} />
             </div>
           </div>
 

@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 
-import CustomButton, { CustomArrow } from "../button/CustomButton";
+import CustomButton from "../button/CustomButton";
+import CustomArrow from "../button/custom-arrow";
 import DottedBorderContainer from "./dotted-container";
 
 const events = [
@@ -55,8 +56,8 @@ const UpcomingEvents = () => {
             Upcoming Events
           </p>
           <div className="flex gap-2">
-            <CustomArrow img="/arrows/left.png" onClick={prevSlide} />
-            <CustomArrow img="/arrows/right.png" onClick={nextSlide} />
+            <CustomArrow img="/arrows/left.svg" onClick={prevSlide} />
+            <CustomArrow img="/arrows/right.svg" onClick={nextSlide} />
           </div>
         </div>
 
