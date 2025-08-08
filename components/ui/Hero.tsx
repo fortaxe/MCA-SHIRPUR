@@ -25,13 +25,7 @@ const Hero = () => {
             {/* Left Content Section */}
             <div className="flex-1 space-y-[15px] sm:space-y-6">
               <h1 className="heading font-abril">
-                UNCOVER THE
-                <br />
-                TIMELESS BEAUTY
-                <br />
-                AND HERITAGE OF
-                <br />
-                CHESS
+              UNCOVER THE BEAUTY AND HERITAGE OF CHESS
               </h1>
 
               <p className="description ">
