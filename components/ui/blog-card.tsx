@@ -27,7 +27,9 @@ const BlogCard: React.FC<BlogProps> = ({
           <p className="text-[12px] left-align text-black1 mb-0 text-white">
             {createdAt}
           </p>
-          <BlackButton name="Read More" onClick={console.log("somethign")} />
+          <p className="description text-white! underline">
+                    Read More
+                  </p>
         </div>
       </div>
     </div>

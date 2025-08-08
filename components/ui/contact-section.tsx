@@ -8,7 +8,7 @@ const ContactSection = () => {
         <div className="flex flex-row items-start justify-between  p-[40px] bg-black rounded-[25px]">
           {/* left section */}
           <div className="flex flex-col items-start justify-start max-w-[434px]">
-            <p className="sub-small-heading font-abril text-white!">
+            <p className="sub-small-heading font-abril text-white! uppercase">
               Ready to make your first move?{" "}
             </p>
             <p className="text-white   text-[16px]  leading-[24px] tracking-0 mt-[15px] max-w-[600px]">

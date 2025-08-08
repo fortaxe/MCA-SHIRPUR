@@ -49,7 +49,7 @@ const Blogs = () => {
       <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
         <DottedBorderContainer className=" px-[50px]  py-[35px]">
           <div className="flex items-center justify-center mb-[50px]">
-            <p className="sub-small-heading font-abril">
+            <p className="sub-small-heading font-abril uppercase">
               News and Updates{" "}
             </p>
             {/* <div className="flex gap-2">

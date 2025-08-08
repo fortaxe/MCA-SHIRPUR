@@ -66,7 +66,7 @@ const UpcomingEvents = () => {
     <div className="max-w-[1440px] mx-auto px-2 sm:px-[20px]  ">
       <DottedBorderContainer className="px-[15px]  sm:px-[30px] py-[35px]">
         <div className="flex items-center justify-center mb-[15px] sm:mb-[50px]">
-          <p className="sub-small-heading font-abril">
+          <p className="sub-small-heading font-abril uppercase">
             Upcoming Events
           </p>
           {/* <div className="flex gap-2">
@@ -104,10 +104,13 @@ const UpcomingEvents = () => {
                   <span className="mr-2 description   ">
                     {event.date}
                   </span>
-                  <CustomButton
+                  {/* <CustomButton
                     name="READ MORE"
                     onClick={console.log("somethign")}
-                  />
+                  /> */}
+                  <p className="description text-[#D7816A]! underline">
+                    Read More
+                  </p>
                 </div>
               </div>
             </div>

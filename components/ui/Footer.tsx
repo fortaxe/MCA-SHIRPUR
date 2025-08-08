@@ -127,7 +127,7 @@ export default function Footer() {
                   onClick={() => router.push("/privacy-policy")}
                   className="cursor-pointer transition-colors text-left"
                 >
-                  | ©2025 MCA Chess Academy
+                  ©2025 MCA Chess Academy
                 </span>
               </div>
             </div>
