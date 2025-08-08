@@ -236,15 +236,14 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2  py-1 text-sm font-normal text-black"
     >
-      {/* <img
-        src="https://assets.aceternity.com/logo-dark.png"
+      <img
+        src="/logo.svg"
         alt="logo"
-        width={30}
-        height={30}
-      /> */}
-      <span className="font-semibold text-[#767676] text-[16px] leading-[100%] tracking-0 dark:text-white">
+        
+      />
+      {/* <span className="font-semibold text-[#767676] text-[16px] leading-[100%] tracking-0 dark:text-white">
         MCA SHIRPUR
-      </span>
+      </span> */}
     </a>
   );
 };

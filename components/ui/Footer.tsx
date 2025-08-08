@@ -87,6 +87,16 @@ export default function Footer() {
                   >
                     +91 8765 768 768
                   </a>
+
+                  </div>
+                  <div>
+                  <a
+                    href="tel:+9102563299144"
+                    className="description text-white!"
+                  >
+                   +91 02563 299 144
+                  </a>
+                  
                   </div>
                   <div
                     onClick={() => router.push("/digital-marketing")}
