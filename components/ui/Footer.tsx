@@ -18,7 +18,7 @@ export default function Footer() {
               MCA Shirpur
             </div>
 
-            <p className="description text-white! pb-[50px]">
+            <p className="description text-white! pb-[25px] sm:pb-[50px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               pellentesque id erat at blandit. Donec ullamcorper turpis vitae
               dolor lacinia mollis. Donec at augue eget ipsum porttitor
@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
 
             {/* Content Grid */}
-            <div className="flex flex-row gap-[100px] mb-[30px] md:mb-[50px] text-left font-medium">
+            <div className="flex flex-row gap-4 sm:gap-[100px] mb-[30px] md:mb-[50px] text-left font-medium">
               {/* Services Column */}
               <div className="text-left">
                 <p className="description text-white! font-abril pb-[15px]">
@@ -73,36 +73,36 @@ export default function Footer() {
                 </p>
                 <div className="space-y-[2px] text-left">
                   <div>
-                  <a
-                    href="mailto:mcachess@gmail.com"
-                    className="description text-white!"
-                  >
-                    mcachess@gmail.com
-                  </a>
+                    <a
+                      href="mailto:mcashirpur@gmail.com"
+                      className="description text-white!"
+                    >
+                      mcashirpur@gmail.com
+                    </a>
                   </div>
-                  <div>
-                  <a
-                    href="tel:+918765768768"
-                    className="description text-white!"
-                  >
-                    +91 8765 768 768
-                  </a>
 
+                  <div>
+                    <a
+                      href="tel:+919822828143"
+                      className="description text-white!"
+                    >
+                      +91 9822 828 143
+                    </a>
                   </div>
                   <div>
-                  <a
-                    href="tel:+9102563299144"
-                    className="description text-white!"
-                  >
-                   +91 02563 299 144
-                  </a>
-                  
+                    <a
+                      href="tel:+9102563299144"
+                      className="description text-white!"
+                    >
+                      +91 02563 299 144
+                    </a>
                   </div>
                   <div
                     onClick={() => router.push("/digital-marketing")}
                     className="description text-white! max-w-[239px]"
                   >
-                    Clou advertising agency ‍Mythenstrasse 7 6003 Lucerne
+                    Manoj Chess Academy, Shirpur, Near Central Bank of India,
+                    Karwand Naka, Shirpur 425405
                   </div>
                   {/* <div
                     onClick={() => router.push("/website-development")}
@@ -119,21 +119,21 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-{/* 
+            {/* 
             <div className="border border-t-[#585858]" /> */}
 
             {/* Footer */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center   ">
               <div className="flex flex-col  md:flex-row md:space-x-6 text-left">
-                <span className="text-left description text-white!">Privacy Policy</span>
+                <span className="text-left description text-white!">
+                  Privacy Policy
+                </span>
                 <span className="md:ml-[112px] pt-1 sm:pt-0 text-left description text-white!">
                   Terms of Use
-                  
                 </span>
-               
               </div>
               <div className="text-left description text-white! pt-1 sm:pt-0">
-              <span
+                <span
                   onClick={() => router.push("/privacy-policy")}
                   className="cursor-pointer transition-colors text-left"
                 >
