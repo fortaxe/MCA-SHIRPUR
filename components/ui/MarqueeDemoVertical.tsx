@@ -95,7 +95,7 @@ export function MarqueeDemoVertical() {
       </div>
 
       {/* Responsive layout */}
-      <div className="relative grid h-[500px] w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden mt-[35px]">
+      <div className="relative grid h-[800px] w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden mt-[35px]">
         {/* Column 1 - Always visible */}
         <Marquee pauseOnHover vertical className="[--duration:20s]">
           {firstRow.map((review) => (
