@@ -34,31 +34,31 @@ export default function Footer() {
                 </p>
                 <div className="space-y-[2px] text-left text-white!">
                   <div
-                    onClick={() => router.push("/seo")}
+                  
                     className="description text-white!"
                   >
                     Visit
                   </div>
                   <div
-                    onClick={() => router.push("/website-optimization")}
+                   
                     className="description text-white!"
                   >
                     Education
                   </div>
                   <div
-                    onClick={() => router.push("/digital-marketing")}
+                    
                     className="description text-white!"
                   >
                     Become a Member{" "}
                   </div>
                   <div
-                    onClick={() => router.push("/website-development")}
+                   
                     className="description text-white!"
                   >
                     About{" "}
                   </div>
                   <div
-                    onClick={() => router.push("/app-development")}
+                    
                     className="description text-white!"
                   >
                     Get Involved{" "}
