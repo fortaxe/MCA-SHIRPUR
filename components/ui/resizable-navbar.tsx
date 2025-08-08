@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import React, { useRef, useState } from "react";
 import CustomButton from "../button/CustomButton";
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -100,7 +101,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
   
   // Check if current page is landing page (you can adjust this logic based on your routing)
-  const isLandingPage = window.location.pathname === '/' || window.location.pathname === '';
+  const pathname = usePathname();
+  const isLandingPage = pathname === '/' || pathname === '';
   const activeIndex = isLandingPage ? 0 : null; // Academy is at index 0
 
   return (
