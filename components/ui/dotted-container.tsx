@@ -12,22 +12,22 @@ const DottedBorderContainer = ({
   <div className={`relative ${className}`}>
     {/* Top Left */}
     <div className="absolute top-0 left-0 z-20">
-      <div className="w-[11px] h-[11px] border border-gray-300 absolute top-0 left-0 translate-x-[-42%] translate-y-[-50%] bg-[#F3F3F3]" />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute top-0 left-0 translate-x-[-42%] translate-y-[-50%] bg-white" />
     </div>
 
     {/* Top Right */}
     <div className="absolute top-0 right-0 z-20">
-      <div className="w-[11px] h-[11px] border border-gray-300 absolute top-0 right-0 translate-x-[42%] translate-y-[-50%] bg-[#F3F3F3]" />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute top-0 right-0 translate-x-[42%] translate-y-[-50%] bg-white" />
     </div>
 
     {/* Bottom Left */}
     <div className="absolute bottom-0 left-0 z-20">
-      <div className="w-[11px] h-[11px] border border-gray-300 absolute bottom-0 left-0 translate-x-[-42%] translate-y-[50%] bg-[#F3F3F3]" />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute bottom-0 left-0 translate-x-[-42%] translate-y-[50%] bg-white" />
     </div>
 
     {/* Bottom Right */}
     <div className="absolute bottom-0 right-0 z-20">
-      <div className="w-[11px] h-[11px] border border-gray-300 absolute bottom-0 right-0 translate-x-[42%] translate-y-[50%] bg-[#F3F3F3]" />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute bottom-0 right-0 translate-x-[42%] translate-y-[50%] bg-white" />
     </div>
 
     {/* Dotted border lines */}
