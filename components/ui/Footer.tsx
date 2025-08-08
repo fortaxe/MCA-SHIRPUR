@@ -8,11 +8,11 @@ export default function Footer() {
     // <div className="px-4  md:px-[50px] pb-[30px] md:pb-[75px] w-full  max-w-[1440px] mx-auto">
     <div className=" max-w-[1440px] w-full mx-auto px-2 lg:px-[20px] ">
       <SideDottedBorderContainer className="px-4 sm:px-[30px]  pb-[30px] sm:pb-[50px]">
-        <div className="flex rounded-[20px] sm:rounded-[25px] w-full bg-black py-[25px] sm:pt-[70px] sm:pb-[50px]">
+        <div className="flex rounded-[20px] sm:rounded-[25px] w-full bg-black py-[25px] sm:pt-[40px] sm:pb-[40px]">
           <div className="px-4 sm:px-0 md:px-[40px] text-left ">
             {/* Main Title */}
             <div
-              className="text-[32px] md:text-[72px] xl:text-[184px] sm:leading-[100%] tracking-0
+              className="text-[32px] md:text-[72px] xl:text-[184px] sm:leading-none tracking-0
             pb-[30px] text-white  uppercase font-abril text-center"
             >
               MCA Shirpur
