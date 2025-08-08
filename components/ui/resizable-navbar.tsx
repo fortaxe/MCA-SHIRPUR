@@ -92,7 +92,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
   return (
     <motion.div
       animate={{
-     
+        backdropFilter: visible ? "blur(10px)" : "none",
      
         width: visible ? "40%" : "100%",
         y: visible ? 20 : 0,
