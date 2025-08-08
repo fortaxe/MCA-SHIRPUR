@@ -12,38 +12,22 @@ const DottedBorderContainer = ({
   <div className={`relative ${className}`}>
     {/* Top Left */}
     <div className="absolute top-0 left-0 z-20">
-      <img 
-        src="square.svg" 
-        alt="" 
-        className="w-[11px] h-[11px] absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2" 
-      />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute top-0 left-0 translate-x-[-50%] translate-y-[-50%]" />
     </div>
 
     {/* Top Right */}
     <div className="absolute top-0 right-0 z-20">
-      <img 
-        src="square.svg" 
-        alt="" 
-        className="w-[11px] h-[11px] absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2" 
-      />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute top-0 right-0 translate-x-[50%] translate-y-[-50%]" />
     </div>
 
     {/* Bottom Left */}
     <div className="absolute bottom-0 left-0 z-20">
-      <img 
-        src="square.svg" 
-        alt="" 
-        className="w-[11px] h-[11px] absolute bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2" 
-      />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute bottom-0 left-0 translate-x-[-50%] translate-y-[50%]" />
     </div>
 
     {/* Bottom Right */}
     <div className="absolute bottom-0 right-0 z-20">
-      <img 
-        src="square.svg" 
-        alt="" 
-        className="w-[11px] h-[11px] absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2" 
-      />
+      <div className="w-[11px] h-[11px] border border-gray-300 absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%]" />
     </div>
 
     {/* Dotted border lines */}
