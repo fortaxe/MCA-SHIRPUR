@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const CustomButton = ({ name, onClick }: { name: string, onClick: any }) => {
   return (
     <StyledWrapper>
-      <button onClick={onClick}>
+      <button onClick={onClick} className='font-monument'>
         {name}
       </button>
     </StyledWrapper>
@@ -36,7 +36,7 @@ const StyledWrapper = styled.div`
     border: 1px solid black;
     box-shadow: 2px 5px 0 0 black; /* initially visible shadow */
     line-height: 100%;
-    font-family: monument;
+  
   }
 
   button:hover {

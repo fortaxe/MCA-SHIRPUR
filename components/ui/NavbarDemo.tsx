@@ -16,7 +16,7 @@ import CustomButton from "../button/CustomButton";
 export function NavbarDemo() {
   const navItems = [
     {
-      name: "Visit",
+      name: "Events",
       link: "#features",
     },
     {
@@ -36,8 +36,8 @@ export function NavbarDemo() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full border border-[#F3F3F3] ">
-      <Navbar className="border border-[#F3F3F3]">
+    <div className="relative w-full  ">
+      <Navbar >
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />

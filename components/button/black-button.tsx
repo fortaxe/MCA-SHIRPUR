@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const BlackButton = ({ name, onClick }: { name: string, onClick: any }) => {
   return (
     <StyledWrapper>
-      <button onClick={onClick}>
+      <button onClick={onClick} className='font-monument'>
         {name}
       </button>
     </StyledWrapper>
