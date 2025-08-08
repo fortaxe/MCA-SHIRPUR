@@ -26,7 +26,7 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border: 1px solid white;
-    box-shadow: 2px 5px 0 0 white; /* initially visible shadow */
+    box-shadow: 3px 3px 0 0 white; /* initially visible shadow */
     line-height: 100%;
     color: white;
   }
