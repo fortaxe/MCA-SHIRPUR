@@ -179,3 +179,23 @@
   letter-spacing: 0%;
   font-weight: 500;
 }
+
+.cursor__dot div {
+  z-index: 999999 !important;
+}
+.cursor__dot div:last-child {
+  background-color: #737373 !important;
+}
+
+.cursor__dot div:first-child {
+  filter: invert(1);
+  background-color: #737373 !important;
+}
+
+.color_pr {
+  color: #737373 !important;
+}
+
+.color_sec {
+  color: #737373;
+}

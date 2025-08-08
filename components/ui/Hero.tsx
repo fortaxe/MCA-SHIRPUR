@@ -50,15 +50,22 @@ const Hero = () => {
 
             {/* Right Video Section */}
             <div className="w-[438px] h-[700px] relative flex justify-center lg:justify-end shrink-0">
-              {!isVideoLoaded && (
+            <img 
+              src="/hero.svg"
+              alt="hero"
+              className="w-full h-full object-cover rounded-full transition-opacity duration-500 opacity-100"
+              />
+              {/* {!isVideoLoaded && (
                 <div className="absolute rounded-full inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse">
                   <div className="w-full h-full rounded-full bg-gray-300  relative overflow-hidden">
                     <div className="absolute  inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
                   </div>
                 </div>
-              )}
+              )} */}
 
-              <video
+
+
+              {/* <video
                 className={`w-full h-full object-cover rounded-full transition-opacity duration-500 ${
                   isVideoLoaded ? "opacity-100" : "opacity-0"
                 }`}
@@ -69,10 +76,10 @@ const Hero = () => {
                 loop
                 onLoadedData={handleVideoLoad}
                 onCanPlay={handleVideoLoad}
-              >
-                <source src="/video/hero.mp4" type="video/mp4" />
+              > */}
+                {/* <source src="/video/hero.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             </div>
           </div>
         </SideDottedBorderContainer>
