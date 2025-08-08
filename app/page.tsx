@@ -11,7 +11,7 @@ import ContactSection from "@/components/ui/contact-section";
 
 export default function Home() {
   return (
-    <div className="bg-[#F3F3F3]">
+    <div >
       <NavbarDemo />
       <Hero />
       <UpcomingEvents />

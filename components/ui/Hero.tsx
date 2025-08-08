@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-gray-100 flex items-center">
+    <div className=" flex items-center">
       <div className="container max-w-[1440px] w-full mx-auto lg:px-[20px]">
         <SideDottedBorderContainer className="  px-[30px] py-[35px]">
           {/* Remove NavbarDemo from here */}

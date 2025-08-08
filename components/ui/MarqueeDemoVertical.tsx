@@ -91,10 +91,7 @@ export function MarqueeDemoVertical() {
          <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase mb-4 font-monument">
           What People Are Saying
         </p>
-         {/* <p className="text-description font-helvetica  text-[16px] font-Helvetica Roman leading-[24px] tracking-0 mt-[15px]">
-          Hear from makers, founders, and creatives who’ve tried it unfiltered
-          and honest.
-        </p> */}
+    
       </div>
 
       {/* Responsive layout */}
@@ -130,8 +127,8 @@ export function MarqueeDemoVertical() {
         </Marquee>
 
         {/* Gradient overlays */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#f3f3f3] to-transparent"></div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#f3f3f3] to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-white to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white to-transparent"></div>
       </div>
       </SideDottedBorderContainer>
     </div>
