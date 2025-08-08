@@ -51,24 +51,7 @@ interface MobileNavMenuProps {
 export const Navbar = ({ children, className }: NavbarProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState<boolean>(false);
-
-  // React.useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //     console.log("Native scroll position:", scrollTop);
-      
-  //     if (scrollTop > 100) {
-  //       setVisible(true);
-  //     } else {
-  //       setVisible(false);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-    
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
-
+     
   return (
     <motion.div
       ref={ref}
@@ -115,6 +98,10 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
 
 export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
+  
+  // Check if current page is landing page (you can adjust this logic based on your routing)
+  const isLandingPage = window.location.pathname === '/' || window.location.pathname === '';
+  const activeIndex = isLandingPage ? 0 : null; // Academy is at index 0
 
   return (
     <motion.div
@@ -132,7 +119,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           key={`link-${idx}`}
           href={item.link}
         >
-          {hovered === idx && (
+          {(hovered === idx || activeIndex === idx) && (
             <motion.div
               layoutId="hovered"
               className="absolute inset-0 h-full w-full rounded-full bg-gray-100"
@@ -144,6 +131,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     </motion.div>
   );
 };
+
 
 
 export const MobileNav = ({ children, className, visible }: MobileNavProps) => {

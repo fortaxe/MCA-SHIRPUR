@@ -16,16 +16,16 @@ import CustomButton from "../button/CustomButton";
 export function NavbarDemo() {
   const navItems = [
     {
+      name: "Academy",
+      link: "#contact",
+    },
+    {
       name: "Events",
       link: "#features",
     },
     {
       name: "Education",
       link: "#pricing",
-    },
-    {
-      name: "Academy",
-      link: "#contact",
     },
     {
       name: "Get Involved",
@@ -46,7 +46,7 @@ export function NavbarDemo() {
           items={navItems} />
           <div className="flex items-center gap-4">
             <CustomButton
-              name="Read More"
+              name="Join Today"
               onClick={console.log("somethign")}
             />
           </div>
@@ -78,16 +78,10 @@ export function NavbarDemo() {
             ))}
             <div className="flex w-full flex-col gap-4">
               <CustomButton
-                name="Book a call"
+                name="Join Today"
                 onClick={console.log("somethign")}
               />
-              {/* <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton> */}
+           
             </div>
           </MobileNavMenu>
         </MobileNav>
