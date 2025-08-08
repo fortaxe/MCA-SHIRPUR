@@ -1,8 +1,10 @@
 import ContactCard from "./contact-card";
+import SideDottedBorderContainer from "./SideDottedContainer";
 
 const ContactSection = () => {
   return (
-    <div className=" mx-auto px-[50px] py-[70px] max-w-[1440px]">
+    <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
+        <SideDottedBorderContainer className=" px-[30px]  py-[35px]">
       <div className="flex flex-row items-start justify-between  p-[40px] bg-black rounded-[25px]">
         {/* left section */}
         <div className="flex flex-col items-start justify-start max-w-[434px]">
@@ -18,6 +20,7 @@ const ContactSection = () => {
           <ContactCard />
         </div>
       </div>
+      </SideDottedBorderContainer>
     </div>
   );
 };

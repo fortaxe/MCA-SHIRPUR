@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { cn } from "@/lib/utils";
 import { Marquee } from "../magicui/marquee";
+import SideDottedBorderContainer from "./SideDottedContainer";
 
 const reviews = [
   {
@@ -83,7 +84,9 @@ const ReviewCard = ({
 
 export function MarqueeDemoVertical() {
   return (
-    <div className="max-w-[1366px] px-4 md:px-6 lg:px-15 mx-auto w-full py-12 md:py-[80px] ">
+    // <div className="max-w-[1440px] px-4 md:px-6 lg:px-15 mx-auto w-full py-12 md:py-[80px] ">
+       <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
+        <SideDottedBorderContainer className=" px-[50px]  py-[35px]">
       <div className="text-center mb-20">
          <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase mb-4 ">
           What People Are Saying
@@ -130,6 +133,7 @@ export function MarqueeDemoVertical() {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#f3f3f3] to-transparent"></div>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#f3f3f3] to-transparent"></div>
       </div>
+      </SideDottedBorderContainer>
     </div>
   );
 }

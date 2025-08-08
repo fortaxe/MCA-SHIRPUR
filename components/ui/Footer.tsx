@@ -1,15 +1,18 @@
 "use client";
 import { useRouter } from "next/navigation";
+import SideDottedBorderContainer from "./SideDottedContainer";
 
 export default function Footer() {
   const router = useRouter();
   return (
-    <div className="px-4  md:px-[50px] pb-[30px] md:pb-[75px] w-full  max-w-[1440px] mx-auto">
+    // <div className="px-4  md:px-[50px] pb-[30px] md:pb-[75px] w-full  max-w-[1440px] mx-auto">
+    <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
+        <SideDottedBorderContainer className=" px-[30px]  py-[35px]">
       <div className="flex rounded-[40px] w-full bg-white pt-12">
         <div className="px-4 sm:px-0 py-[16px] md:px-[80px] text-left ">
           {/* Main Title */}
           <div
-            className="text-[32px] md:text-[72px] xl:text-[126px] sm:leading-[100%]  tracking-0
+            className="text-[32px] md:text-[72px] xl:text-[126px] sm:leading-[100%] tracking-0
             pb-[30px] md:pb-[50px] text-black text-left uppercase"
           >
             MCA Shirpur
@@ -107,6 +110,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      </SideDottedBorderContainer>
     </div>
   );
 }

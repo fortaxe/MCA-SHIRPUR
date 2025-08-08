@@ -1,4 +1,3 @@
-
 import { ReactNode } from "react";
 
 interface DottedBorderContainerProps {
@@ -6,72 +5,97 @@ interface DottedBorderContainerProps {
   className?: string;
 }
 
-const DottedBorderContainer = ({ children, className = "" }: DottedBorderContainerProps) => (
+const DottedBorderContainer = ({
+  children,
+  className = "",
+}: DottedBorderContainerProps) => (
   <div className={`relative ${className}`}>
-    {/* Corner decorative boxes - centered on the border lines */}
-    <div className="absolute top-0 left-0 z-20 translate-x-[-50%] translate-y-[-50%]">
-      <div className="w-2 h-2 border border-gray-400"></div>
+    {/* Top Left */}
+    <div className="absolute top-0 left-0 z-20">
+      <img 
+        src="square.svg" 
+        alt="" 
+        className="w-[11px] h-[11px] absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2" 
+      />
     </div>
-    <div className="absolute top-0 right-0 z-20 translate-x-[50%] translate-y-[-50%]">
-      <div className="w-2 h-2 border border-gray-400"></div>
+
+    {/* Top Right */}
+    <div className="absolute top-0 right-0 z-20">
+      <img 
+        src="square.svg" 
+        alt="" 
+        className="w-[11px] h-[11px] absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2" 
+      />
     </div>
-    <div className="absolute bottom-0 left-0 z-20 translate-x-[-50%] translate-y-[50%]">
-      <div className="w-2 h-2 border border-gray-400"></div>
+
+    {/* Bottom Left */}
+    <div className="absolute bottom-0 left-0 z-20">
+      <img 
+        src="square.svg" 
+        alt="" 
+        className="w-[11px] h-[11px] absolute bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2" 
+      />
     </div>
-    <div className="absolute bottom-0 right-0 z-20 translate-x-[50%] translate-y-[50%]">
-      <div className="w-2 h-2 border border-gray-400"></div>
+
+    {/* Bottom Right */}
+    <div className="absolute bottom-0 right-0 z-20">
+      <img 
+        src="square.svg" 
+        alt="" 
+        className="w-[11px] h-[11px] absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2" 
+      />
     </div>
 
     {/* Dotted border lines */}
-    <div 
+    <div
       className="absolute top-0 left-0 right-0 h-px z-10"
       style={{
         background: `repeating-linear-gradient(
           to right,
-          #9ca3af 0px,
-          #9ca3af 4px,
-          transparent 4px,
-          transparent 8px
-        )`
+          #C5C5C5 0px,
+            #C5C5C5 10px,
+      transparent 10px,
+      transparent 20px
+        )`,
       }}
     ></div>
 
-    <div 
+    <div
       className="absolute bottom-0 left-0 right-0 h-px z-10"
       style={{
         background: `repeating-linear-gradient(
           to right,
-          #9ca3af 0px,
-          #9ca3af 4px,
-          transparent 4px,
-          transparent 8px
-        )`
+          #C5C5C5 0px,
+           #C5C5C5 10px,
+      transparent 10px,
+      transparent 20px
+        )`,
       }}
     ></div>
 
-    <div 
+    <div
       className="absolute left-0 top-0 bottom-0 w-px z-10"
       style={{
         background: `repeating-linear-gradient(
           to bottom,
-          #9ca3af 0px,
-          #9ca3af 4px,
-          transparent 4px,
-          transparent 8px
-        )`
+          #C5C5C5 0px,
+           #C5C5C5 10px,
+      transparent 10px,
+      transparent 20px
+        )`,
       }}
     ></div>
 
-    <div 
+    <div
       className="absolute right-0 top-0 bottom-0 w-px z-10"
       style={{
         background: `repeating-linear-gradient(
           to bottom,
-          #9ca3af 0px,
-          #9ca3af 4px,
-          transparent 4px,
-          transparent 8px
-        )`
+          #C5C5C5 0px,
+          #C5C5C5 10px,
+      transparent 10px,
+      transparent 20px
+        )`,
       }}
     ></div>
 
@@ -79,6 +103,5 @@ const DottedBorderContainer = ({ children, className = "" }: DottedBorderContain
     {children}
   </div>
 );
-
 
 export default DottedBorderContainer;

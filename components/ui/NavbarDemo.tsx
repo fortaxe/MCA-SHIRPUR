@@ -1,14 +1,15 @@
 "use client";
-import { Navbar,
-   NavBody,
-   NavItems,
-   MobileNav,
-   NavbarLogo,
-   NavbarButton,
-   MobileNavHeader,
-   MobileNavToggle,
-   MobileNavMenu,
- } from "./resizable-navbar";
+import {
+  Navbar,
+  NavBody,
+  NavItems,
+  MobileNav,
+  NavbarLogo,
+  NavbarButton,
+  MobileNavHeader,
+  MobileNavToggle,
+  MobileNavMenu,
+} from "./resizable-navbar";
 import { useState } from "react";
 import CustomButton from "../button/CustomButton";
 
@@ -29,7 +30,7 @@ export function NavbarDemo() {
     {
       name: "Get Involved",
       link: "#contact",
-    }
+    },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,8 +43,10 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-          
-           <CustomButton name="JOIN TODAY" onClick={console.log("somethign")} />
+            <CustomButton
+              name="JOIN TODAY"
+              onClick={console.log("somethign")}
+            />
           </div>
         </NavBody>
 
@@ -72,7 +75,10 @@ export function NavbarDemo() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-           <CustomButton name="Book a call" onClick={console.log("somethign")} />
+              <CustomButton
+                name="Book a call"
+                onClick={console.log("somethign")}
+              />
               {/* <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -187,7 +193,3 @@ export function NavbarDemo() {
 //     </div>
 //   );
 // };
-
-
-
-
