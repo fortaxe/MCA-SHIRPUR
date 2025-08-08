@@ -11,7 +11,7 @@ const BlogCard: React.FC<BlogProps> = ({
   <div className="relative bg-[#3D3D3D] rounded-[25px]">
     <div className=" p-[25px] flex flex-col h-full">
       <img
-        src={"/black-card.jpg"}
+        src={img}
         alt={heading}
         className="w-full h-full object-cover rounded-[12.5px]  "
       />

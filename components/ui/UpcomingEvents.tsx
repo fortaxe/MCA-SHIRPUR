@@ -12,42 +12,42 @@ const events = [
     date: "22.05.2025",
     title:
       "Event description Lorem ipsum dolor sit amet, consectetur description ",
-    image: "/gray-card.jpg",
+    image: "/upcoming.jpg",
   },
   {
     id: 2,
     date: "22.05.2025",
     title:
       "Event description Lorem ipsum dolor sit amet, consectetur description ",
-    image: "/gray-card.jpg",
+    image: "/upcoming.jpg",
   },
   {
     id: 3,
     date: "22.05.2025",
     title:
       "Event description Lorem ipsum dolor sit amet, consectetur description ",
-    image: "/gray-card.jpg",
+    image: "/upcoming.jpg",
   },
   {
     id: 4,
     date: "22.05.2025",
     title:
       "Event description Lorem ipsum dolor sit amet, consectetur description ",
-    image: "/gray-card.jpg",
+    image: "/upcoming.jpg",
   },
   {
     id: 3,
     date: "22.05.2025",
     title:
       "Event description Lorem ipsum dolor sit amet, consectetur description ",
-    image: "/gray-card.jpg",
+    image: "/upcoming.jpg",
   },
   {
     id: 4,
     date: "22.05.2025",
     title:
       "Event description Lorem ipsum dolor sit amet, consectetur description ",
-    image: "/gray-card.jpg",
+    image: "/upcoming.jpg",
   },
 ];
 

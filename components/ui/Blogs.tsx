@@ -14,7 +14,7 @@ const Blogs = () => {
       id: 1,
       date: "22.05.2025",
       title: "Freestyle Chess Grand Slam goes live in Las Vegas",
-      image: "/home/event1.png",
+      image: "/blog.jpg",
       description:
         "Hosted at Wynn’s Lafite Ballroom, this Chess960 “Freestyle” event features Magnus Carlsen and Hans Niemann among 16 top players, blending elite chess with live entertainment",
     },
@@ -22,7 +22,7 @@ const Blogs = () => {
       id: 2,
       date: "22.05.2025",
       title: "Freestyle Chess Grand Slam goes live in Las Vegas",
-      image: "/home/event1.png",
+      image: "/blog.jpg",
       description:
         "Hosted at Wynn’s Lafite Ballroom, this Chess960 “Freestyle” event features Magnus Carlsen and Hans Niemann among 16 top players, blending elite chess with live entertainment",
     },
@@ -30,7 +30,7 @@ const Blogs = () => {
       id: 3,
       date: "22.05.2025",
       title: "Freestyle Chess Grand Slam goes live in Las Vegas",
-      image: "/home/event1.png",
+      image: "/blog.jpg",
       description:
         "Hosted at Wynn’s Lafite Ballroom, this Chess960 “Freestyle” event features Magnus Carlsen and Hans Niemann among 16 top players, blending elite chess with live entertainment",
     },
