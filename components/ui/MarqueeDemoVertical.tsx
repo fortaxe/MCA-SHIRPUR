@@ -61,7 +61,7 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-full w-full md:max-w-[480px]  cursor-pointer overflow-hidden rounded-4xl  shadow-sm outline outline-black/5 p-4 ",
+        "relative h-full w-full   cursor-pointer overflow-hidden rounded-[20px] sm:rounded-[25px]  shadow-sm outline outline-black/5 p-4 ",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -71,10 +71,10 @@ const ReviewCard = ({
       <div className="flex flex-row items-center gap-2">
         <img className="rounded-full" width="32" height="32" alt="" src={img} />
         <div className="flex flex-col ">
-          <figcaption className="text-lg  dark:text-white ">
+          <figcaption className="description text-black! ">
             {name}
           </figcaption>
-          <p className="text-sm   dark:text-white/40 ">{username}</p>
+         
         </div>
       </div>
       <blockquote className="mt-2 description ">{body}</blockquote>
