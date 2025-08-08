@@ -6,8 +6,8 @@ import { ThreeDPhotoCarousel } from "./three-d-coursel";
 
 export default function ThreeDPhotoCarouselDemo() {
   return (
-    <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
-      <DottedBorderContainer className=" px-[50px]  pt-[70px] flex justify-center">
+    <div className=" max-w-[1440px] w-full mx-auto px-2 lg:px-[20px]">
+      <DottedBorderContainer className="px-4 sm:px-[50px] pt-[25px] sm:pt-[70px] flex justify-center">
         <div className="w-full max-w-[961px] text-center ">
           <h1 className="font-abril heading" >
             Our Goal isn’t Just

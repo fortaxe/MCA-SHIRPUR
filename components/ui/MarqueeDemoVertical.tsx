@@ -85,9 +85,9 @@ const ReviewCard = ({
 export function MarqueeDemoVertical() {
   return (
     // <div className="max-w-[1440px] px-4 md:px-6 lg:px-15 mx-auto w-full py-12 md:py-[80px] ">
-       <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
-        <SideDottedBorderContainer className=" px-[50px]  py-[35px]">
-      <div className="text-center mb-20">
+       <div className=" max-w-[1440px] w-full mx-auto px-2 lg:px-[20px]">
+        <SideDottedBorderContainer className="px-2 sm:px-[50px] py-[25px] sm:py-[35px]">
+      <div className="text-center mb-[25px] sm:mb-20">
          <p className=" mb-4 font-abril sub-small-heading uppercase">
           What People Are Saying
         </p>

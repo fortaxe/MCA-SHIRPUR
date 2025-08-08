@@ -86,7 +86,7 @@ const UpcomingEvents = () => {
                 <img
                   src={event.image}
                   alt={`Event ${event.id}`}
-                  className="w-full h-full object-cover rounded-[24px]  "
+                  className="w-full h-full object-cover rounded-[20px] sm:rounded-[24px]  "
                 />
 
                 {/* Bottom Gradient Overlay */}

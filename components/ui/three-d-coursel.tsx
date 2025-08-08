@@ -59,8 +59,8 @@ export function useMediaQuery(
 }
 
 const keywords = [
-  "night",
-  "city",
+  "winter",
+  "cityscape",
   "sky",
   "sunset",
   "sunrise",
@@ -72,7 +72,7 @@ const keywords = [
   "street",
   "lights",
   "downtown",
-  "bridge",
+  "downtown",
 ]
 
 const duration = 0.15

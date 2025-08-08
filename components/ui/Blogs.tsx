@@ -46,8 +46,8 @@ const Blogs = () => {
 
   return (
 
-      <div className=" max-w-[1440px] w-full mx-auto lg:px-[20px]">
-        <DottedBorderContainer className=" px-[50px]  py-[35px]">
+      <div className=" max-w-[1440px] w-full mx-auto px-2 lg:px-[20px]">
+        <DottedBorderContainer className="px-4 sm:px-[50px]  py-[35px]">
           <div className="flex items-center justify-center mb-[50px]">
             <p className="sub-small-heading font-abril uppercase">
               News and Updates{" "}
@@ -58,7 +58,7 @@ const Blogs = () => {
             </div> */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 overflow-x-auto">
+          <div className="flex overflow-x-auto gap-[10px] sm:gap-6 no-scrollbar">
             {events.map((event, index) => (
               <BlogCard
                 key={`${event.id}`}

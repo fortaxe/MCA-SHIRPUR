@@ -14,7 +14,7 @@ const ThirdSection = () => {
             Starts with a First Move
           </h2>
           </div>
-          <div className="my-6">
+          <div className="my-[15px] sm:my-[25px]">
             <AnimatedTooltipPreview />
           </div>
           <div className="flex justify-center">
@@ -24,7 +24,7 @@ const ThirdSection = () => {
             />
           </div>
 
-          <div className="mt-[80px]">
+          <div className="mt-[15px] sm:mt-[80px]">
             <img src={"/home/chess.png"} />
           </div>
         </SideDottedBorderContainer>
