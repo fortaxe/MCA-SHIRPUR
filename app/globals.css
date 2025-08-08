@@ -8,8 +8,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-abril: var(--font-abril);
  --font-helvetica: "Helvetica Roman", sans-serif;
-  --font-monument: "Monument Extended", Helvetica, Arial, sans-serif;
+  /* --font-monument: "Monument Extended", Helvetica, Arial, sans-serif; */
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -146,7 +147,9 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-geist-sans), Monument Extended, sans-serif !important;
+    font-family: var(--font-geist-sans), abril, sans-serif !important;
+
+    
   }
 }
 
@@ -157,7 +160,7 @@
   font-style: normal;
 } */
 
-@font-face {
+/* @font-face {
   font-family: "Aeonik";
   src: url("/font/Helvetica Roman.ttf") format("truetype");
   font-weight: normal;
@@ -170,14 +173,52 @@
   src: url("/font/MONUMENTEXTENDED-REGULAR.OTF") format("opentype");
   font-weight: normal;
   font-style: normal;
+} */
+
+@media (max-width: 640px) {
+  .description {
+    font-size: 14px!important;
+    line-height: 20px!important;
+    font-weight: 500!important;
+  }
+
+  .sub-small-heading {
+    font-size: 28px!important;
+    line-height: 100%!important;
+ 
+  }
+
+  .heading {
+    font-size: 35px!important;
+    line-height: 40px!important;      
+  }
 }
 
+.heading {
+  font-size: 84px;              
+  color: #000000;             
+  line-height: 94px;            
+  letter-spacing: 0;             
+  text-transform: uppercase;     
+  
+}
+
+/* This comes later, so it overwrites the above */
 .description {
   color: #767676;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0%;
   font-weight: 500;
+}
+
+.sub-small-heading {
+
+  color: black;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .cursor__dot div {
@@ -198,4 +239,18 @@
 
 .color_sec {
   color: #737373;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

@@ -35,6 +35,20 @@ const events = [
       "Event description Lorem ipsum dolor sit amet, consectetur description ",
     image: "/gray-card.jpg",
   },
+  {
+    id: 3,
+    date: "22.05.2025",
+    title:
+      "Event description Lorem ipsum dolor sit amet, consectetur description ",
+    image: "/gray-card.jpg",
+  },
+  {
+    id: 4,
+    date: "22.05.2025",
+    title:
+      "Event description Lorem ipsum dolor sit amet, consectetur description ",
+    image: "/gray-card.jpg",
+  },
 ];
 
 const UpcomingEvents = () => {
@@ -49,25 +63,25 @@ const UpcomingEvents = () => {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto px-[20px]  ">
-      <DottedBorderContainer className="  px-[30px] py-[35px]">
-        <div className="flex items-center justify-between mb-[50px]">
-          <p className="text-[32px]  text-black leading-[100%] tracking-0 uppercase font-monument">
+    <div className="max-w-[1440px] mx-auto px-2 sm:px-[20px]  ">
+      <DottedBorderContainer className="px-[15px]  sm:px-[30px] py-[35px]">
+        <div className="flex items-center justify-center mb-[15px] sm:mb-[50px]">
+          <p className="sub-small-heading font-abril">
             Upcoming Events
           </p>
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <CustomArrow img="/arrows/left.svg" onClick={prevSlide} />
             <CustomArrow img="/arrows/right.svg" onClick={nextSlide} />
-          </div>
+          </div> */}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex overflow-x-auto gap-[10px] sm:gap-6 no-scrollbar">
           {events.map((event, index) => (
             <div
               key={`${event.id}-${currentIndex}-${index}`}
-              className="overflow-x-auto  duration-300"
+             className="min-w-[272px] sm:min-w-[315px] duration-300"
             >
-              <div className="relative h-[373px] overflow-hidden">
+              <div className="relative  overflow-hidden">
                 {/* Image */}
                 <img
                   src={event.image}

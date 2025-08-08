@@ -13,26 +13,23 @@ const CustomButton = ({ name, onClick }: { name: string; onClick: any }) => {
   );
 };
 
-
-
 // Fixed StyledWrapper with better CSS specificity
 const StyledWrapper = styled.div`
   /* Increase specificity and ensure button styles override navbar styles */
   .custom-btn {
-    text-transform: uppercase !important;
-    color: black !important;
+
+    color: #d7816a !important;
     background: white !important; /* Add explicit background */
     border-radius: 10em !important;
-    font-size: 10px !important;
-    font-weight: 400 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
     padding: 10px 14px !important;
     cursor: pointer !important;
     transition: all 0.3s ease-in-out !important;
-    border: 1px solid black !important;
-    box-shadow: 3px 3px 0 0 black !important;
+    border: 1px solid #d7816a !important;
+    box-shadow: 3px 3px 0 0 #d7816a !important;
     line-height: 100% !important;
     position: relative !important;
-
 
     /* Ensure pointer events work */
     pointer-events: auto !important;
@@ -41,7 +38,6 @@ const StyledWrapper = styled.div`
   .custom-btn:hover {
     transform: translateY(0px) translateX(0px) !important;
     box-shadow: 0 0 0 0 black !important;
-  
   }
 
   .custom-btn:active {

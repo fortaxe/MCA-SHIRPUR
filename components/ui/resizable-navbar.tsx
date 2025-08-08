@@ -8,6 +8,7 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import React, { useRef, useState } from "react";
+import CustomButton from "../button/CustomButton";
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -51,27 +52,27 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState<boolean>(false);
 
-  React.useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      console.log("Native scroll position:", scrollTop);
+  // React.useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  //     console.log("Native scroll position:", scrollTop);
       
-      if (scrollTop > 100) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
-    };
+  //     if (scrollTop > 100) {
+  //       setVisible(true);
+  //     } else {
+  //       setVisible(false);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
     
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <motion.div
       ref={ref}
-      className={cn("fixed inset-x-0 top-0 z-40 w-full max-w-[1440px] mx-auto px-[50px] pt-6", className)}
+      className={cn(" inset-x-0 top-0 z-40 w-full max-w-[1440px] mx-auto  ", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -102,7 +103,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
         minWidth: "1080px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-transparent p-[15px] lg:flex dark:bg-transparent border border-[0.5px] border-[#EDEDED]",
+        "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-transparent  lg:flex dark:bg-transparent ",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className,
       )}
@@ -163,7 +164,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         damping: 50,
       }}
       className={cn(
-        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
+        "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-10 py-2 lg:hidden",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className,
       )}
@@ -224,7 +225,8 @@ export const MobileNavToggle = ({
   return isOpen ? (
     <IconX className="text-black dark:text-white" onClick={onClick} />
   ) : (
-    <IconMenu2 className="text-black dark:text-white" onClick={onClick} />
+    // <IconMenu2 className="text-black dark:text-white" onClick={onClick} />
+    <CustomButton name="Menu" onClick={onClick} />
   );
 };
 
@@ -232,7 +234,7 @@ export const NavbarLogo = () => {
   return (
     <a
       href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+      className="relative z-20 mr-4 flex items-center space-x-2  py-1 text-sm font-normal text-black"
     >
       {/* <img
         src="https://assets.aceternity.com/logo-dark.png"

@@ -2,11 +2,10 @@
 
 import React from "react";
 
-import { NavbarDemo } from "./NavbarDemo";
 import CustomButton from "../button/CustomButton";
 import { useState } from "react";
 import SideDottedBorderContainer from "./SideDottedContainer";
-
+import { NavbarDemo } from "./NavbarDemo";
 const Hero = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -16,13 +15,16 @@ const Hero = () => {
 
   return (
     <div className=" flex items-center">
-      <div className="container max-w-[1440px] w-full mx-auto lg:px-[20px]">
-        <SideDottedBorderContainer className="  px-[30px] py-[35px]">
+      
+      <div className="container max-w-[1440px] w-full mx-auto px-2 lg:px-[20px]">
+      
+        <SideDottedBorderContainer className=" px-4 sm:px-[30px]    sm:py-[35px]">
+        <NavbarDemo />
           {/* Remove NavbarDemo from here */}
-          <div className="flex flex-col lg:flex-row gap-[60px] items-center justify-center pt-[100px]">
+          <div className="flex flex-col lg:flex-row gap-[25px] sm:gap-[60px] items-center justify-center pt-[60px] sm:pt-[100px]">
             {/* Left Content Section */}
-            <div className="flex-1 space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-[58px] font-black text-black leading-[65.12px] tracking-0 uppercase font-monument">
+            <div className="flex-1 space-y-[15px] sm:space-y-6">
+              <h1 className="heading font-abril">
                 UNCOVER THE
                 <br />
                 TIMELESS BEAUTY
@@ -42,18 +44,18 @@ const Hero = () => {
 
               <div className="pt-4">
                 <CustomButton
-                  name="REGISTER NOW"
+                  name="Register Now"
                   onClick={console.log("somethign")}
                 />
               </div>
             </div>
 
             {/* Right Video Section */}
-            <div className="w-[438px] h-[700px] relative flex justify-center lg:justify-end shrink-0">
-            <img 
-              src="/hero.svg"
-              alt="hero"
-              className="w-full h-full object-cover rounded-full transition-opacity duration-500 opacity-100"
+            <div className="pb-[25px] pb-0 sm:w-[438px] sm:h-[700px] relative flex justify-center lg:justify-end shrink-0">
+              <img
+                src="/hero.svg"
+                alt="hero"
+                className="w-full h-full object-cover rounded-full transition-opacity duration-500 opacity-100"
               />
               {/* {!isVideoLoaded && (
                 <div className="absolute rounded-full inset-0 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse">
@@ -62,8 +64,6 @@ const Hero = () => {
                   </div>
                 </div>
               )} */}
-
-
 
               {/* <video
                 className={`w-full h-full object-cover rounded-full transition-opacity duration-500 ${
@@ -77,7 +77,7 @@ const Hero = () => {
                 onLoadedData={handleVideoLoad}
                 onCanPlay={handleVideoLoad}
               > */}
-                {/* <source src="/video/hero.mp4" type="video/mp4" />
+              {/* <source src="/video/hero.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video> */}
             </div>

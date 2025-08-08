@@ -12,7 +12,7 @@ import ContactSection from "@/components/ui/contact-section";
 export default function Home() {
   return (
     <div >
-      <NavbarDemo />
+
       <Hero />
       <UpcomingEvents />
       <ThirdSection />

@@ -46,7 +46,7 @@ export function NavbarDemo() {
           items={navItems} />
           <div className="flex items-center gap-4">
             <CustomButton
-              name="JOIN TODAY"
+              name="Read More"
               onClick={console.log("somethign")}
             />
           </div>
